@@ -13,6 +13,7 @@ app.set("views", "./src/views");
 // setup use middleware morgan
 app.use(morgan("common"));
 
+
 app.get("/", (req, res, next) => {
     res.json({message: "Hello world"})
 })
